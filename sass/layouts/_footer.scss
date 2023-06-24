@@ -1,0 +1,62 @@
+.footer{
+    padding:4.8rem 0;
+    @include device(big__tab){
+
+        background-image:url("./../../static/img/footer-left.svg"), url('./../../static/img/footer-right.svg');
+        background-position:bottom left, right bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+    &__layout{
+        display:flex;
+        flex-direction:column;
+        gap:3rem;
+        padding:3rem;
+        @include device(tab){
+            display:grid;
+            grid-template-columns: repeat(2,minmax(30rem,1fr));
+            grid-template-row: repeat(2,minmax(30rem,1fr));
+            justify-content: space-between;
+            row-gap: 4rem;
+        }
+        
+        @media screen and (min-width:60em){
+            
+            grid-template-columns: repeat(3,minmax(25rem,1fr));    
+        }
+        
+        @include device(laptop){
+            grid-template-columns: repeat(5,minmax(15rem,1fr));
+
+        }     
+
+        };
+    &__logobox{
+        display:flex;
+        flex-direction:column;
+        width:18rem;
+        max-width:20rem;
+    }
+    &__title{
+        font-weight:600;
+        font-size:1.7rem;
+        margin-bottom:.5rem;
+    }
+    &__links{
+        color:var(--clr-primary-dark);
+        transition:.6s all;
+        &:hover,&:active{
+            color:var(--clr-primary);
+            
+         }
+    }
+    &__info{
+        text-align:right;
+    }
+    &__terms{
+        font-size:1.4rem;
+        padding-right:2rem;
+    }
+    &__resources{
+        grid-column:2/3;
+    }
+}

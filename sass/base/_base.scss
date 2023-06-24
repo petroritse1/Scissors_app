@@ -1,0 +1,81 @@
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary: #0065FE;
+    --clr-primary-dark: #1E3448;
+    --clr-secondary: #E2E9F0;
+    --clr-secondary-light:#F9FBFD;
+    --clr-bg: #111826;
+    --clr-bg-light:#414651;
+    --clr-bg-dark:#111;
+    --clr-white: #fff;
+    --clr-gray-1: #333;
+    --clr-gray-2: #555;
+    --clr-gray-3: #777;
+    --clr-gray-4: #999;
+    --ff-primary: "Poppins", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --ln:1.6;
+    --ln-bg:2;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+::selection{
+    background-color:var(--clr-primary);
+}
+
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    font-size:62.5%;
+
+    @include device(desktop){
+        font-size:75%;
+    }
+    @include device(big__tab){
+        font-size:65%;
+    }
+ 
+}
+
+body{
+    font-family:var(--ff-primary);
+    font-size:1.6rem;
+    font-weight: 400;
+    line-height:1.5;
+    color:var(--clr-bg);
+    position:relative;
+ 
+}
+
+a{
+    text-decoration:none;
+    display:inline-block;
+    
+}
+
+h1{
+    font-size:2rem;
+}
+h2 {
+    font-size:2rem;
+}
+
+h3 {
+    font-size:1.2rem;
+}
+li{
+    list-style-type: none;
+}
+ 
+
+
+ 

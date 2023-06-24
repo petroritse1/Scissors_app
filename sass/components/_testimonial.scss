@@ -1,0 +1,67 @@
+.testimonial{
+    &__header{
+        display:flex;
+        position: relative;
+        margin-bottom: 3rem;;
+        align-items: center;
+    }
+    &__card{
+        background: var(--clr-bg-light);
+        padding:2rem;
+        border-radius:.5rem;
+        position:relative;
+        display:flex;
+        margin-bottom:3rem;
+        flex-direction: column;
+        justify-content: space-between;
+         
+        @include device(tab){
+            flex:0 0 calc(50% - 1rem);
+        }
+        
+        
+    }
+    &__block{
+        margin-bottom:9.6rem;
+        @include device(big__tab){
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+    }
+  
+    &__cardimg{
+        width:15rem;
+         
+        
+    }
+    &__imgstar{
+        position:absolute;
+        top:3rem;
+        right:2rem;
+        width:12rem;
+        z-index:2;
+    }
+    &__subheading{
+        font-weight:500;
+        max-width:30rem;
+    }
+    &__text{
+        opacity:(0.8);
+        font-size:1.2rem;
+        margin:2rem 0 1.2rem 0;
+        line-height:1.5;
+    }
+    &__user{
+        display:flex;
+        align-items: center;
+        gap:2rem;
+    }
+    &__userimg{
+        width:4rem;
+    }
+    &__name{
+        font-size:1.4rem;
+    }
+}

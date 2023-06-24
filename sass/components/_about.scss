@@ -1,0 +1,160 @@
+.about{
+    font-weight:400;
+    &__block{
+        // padding:2rem 0;
+        @include device(big__tab){
+            display:flex;
+            justify-content: center;
+            align-items: center;
+         
+
+        }
+
+    }
+    &__article{
+        
+
+    }
+    &__articleblock{
+
+        background: var(--clr-white);
+        border-radius:.5rem;
+        padding:2rem ;
+        color: var(--clr-bg);
+        display:flex;
+        justify-content: space-between;
+        // align-items: center;
+        @include device(big__tab){
+            gap:2rem;
+            
+        }
+
+        
+        
+    }
+    &__subheading{
+        padding-bottom:1rem;
+        font-weight:500;
+        font-size:1.6rem;
+        
+    }
+    &__text{
+        font-size:1.3rem;
+        max-width:40rem;
+    }
+    &__iconbox{
+        display:none;
+        @include device(tab){
+            display:block;
+        }
+    }
+    &__icon{
+        background:var(--clr-primary);
+        padding:.8rem;
+        border-radius:.5rem;
+        
+    }
+    &__featext{
+        color:var(--clr-white);
+        padding:2rem;
+        margin:1rem 0;
+        background:var(--clr-bg-light);
+        border-radius:.5rem;
+        font-size:1.4rem;
+        
+    }
+    &__featext,&__text{
+        @include device(big__tab){
+            font-size:1.2rem;
+        }
+
+    }
+    &__imgbox{
+        
+        margin-top:4rem;
+        position:relative;
+        width:50%;
+        margin:0 auto;
+        @include device(big__tab){
+           flex:0 0 calc(40% - 1rem); 
+           order:-2;
+           
+        }
+        @include device(desktop){
+            flex:0 0 calc(35% - 1rem); 
+
+        }
+    }
+    &__img{
+        width:100%;
+        text-align: center;
+        margin:0 auto;    
+        @include device(big__tab){        
+            margin-left:-4rem;
+        }
+        
+        
+    }
+    &__imguser{
+        border-radius:.5rem;
+        position:absolute;
+        margin-top: .3rem;
+        width:19rem;
+        top:0;
+        margin-left:-20rem;
+        z-index: -1;
+        
+    }
+    
+    &__facebook{
+        margin-left:.4rem;
+        margin-top:1.7rem;
+        width:3.5rem;
+        
+        
+    }
+    &__facebookbox,&__whatsappbox{
+        position:absolute;
+        width:7rem;
+        height:7rem;
+        background-color: var(--clr-white); 
+        border-radius:50%;   
+
+    }
+    &__facebookbox{
+        top:4rem;
+        margin-left:14rem;
+
+    }
+    &__whatsappbox{
+        bottom:3rem;
+        right:14rem;
+    }
+    &__whatsapp{
+        width:5rem;
+        margin-top:1rem;
+    }
+    &__rectanglebox--1,&__rectanglebox--2{
+        position:absolute;
+        z-index: -3;                  
+        
+
+    }
+    &__rectanglebox--1{
+        top:8rem;
+        margin-left:36rem;
+    }
+    &__yellow,&__green{
+        width:7rem;
+    }
+    &__rectanglebox--2{
+        bottom:4rem;
+        margin-left:3rem;
+    }
+    &__pattern{
+        position:relative;
+        margin-top:3rem;
+    }
+    
+
+}

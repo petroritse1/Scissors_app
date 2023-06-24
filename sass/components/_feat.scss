@@ -1,0 +1,50 @@
+.feat{
+    padding: 4.8rem 0;
+    margin-top:-.8rem;
+    background:var(--clr-secondary-light);
+    &__block{
+        display:flex;
+        flex-wrap:wrap;
+        align-items: start;
+        justify-content: space-between;
+         
+        gap:4rem;
+        
+    }
+    &__title{
+        font-size:3.2rem;
+        max-width:35rem; 
+        line-height:1.2;
+        font-weight:600;
+    }
+
+    &__article{
+        display:flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        gap:2rem;
+        flex-wrap:wrap;
+        width:100%;
+         
+        @include device(laptop){
+
+          
+            flex:0 0 calc(60% - 2rem);
+             
+
+        }
+    }
+    &__features{
+        flex:0 0 calc(25% - 2rem);
+    }
+    
+    &__subheading{
+        font-weight:500;
+        font-size:2.4rem;
+        margin-bottom:1rem;
+    }
+    &__text{
+        font-size:1.3rem;
+        max-width:20rem;
+    }
+}

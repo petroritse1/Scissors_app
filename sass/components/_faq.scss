@@ -1,0 +1,27 @@
+.faq{
+    padding:4.8rem 0;
+    @include device(big__tab){
+
+        background-image:url("./../../static/img/faq-bg.svg"), url('./../../static/img/faq-bgright.svg');
+        background-position:top left, right bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+    &__header{
+        text-align:center;    
+    }
+    &__block{
+        margin-top:6rem;
+        max-width:80rem;
+    }
+    &__items{
+        display:flex;
+        justify-content:space-between;
+        border-bottom:1px solid var(--clr-secondary);
+        padding:2rem;
+
+    }
+    &__name{
+        font-size:1.8rem;
+    }
+    
+}

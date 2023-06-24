@@ -1,0 +1,57 @@
+.heading__primary{
+    font-weight:600; 
+    font-size:4rem;
+    line-height:1.6;
+    text-transform:capitlaize;
+    font-family:"Intra",sans-serif;
+    margin-bottom:3rem;
+   
+ 
+   
+     
+    
+    @include device(tab){
+        font-size:4.6rem;
+        max-width:140rem;
+        
+    }
+    // @include device(big__tab){
+    //     font-size:4rem;
+    // }
+     
+}
+
+.heading__title{
+    font-size:3.8rem;
+    font-weight:600;
+    text-transform: capitalize;
+    
+  
+    // @include device(tab){
+    //     font-size:2.4rem;
+    // }
+}
+
+
+// .heading__title{
+//     color:var(--clr-grey-1);
+//     text-align: center;
+//     font-size:3.2rem;
+//     letter-spacing:var(--spacing);
+//     margin-bottom: 6.4rem;
+//     // max-width:5rem;
+   
+// };
+
+.heading__tetiary{
+    font-size:2.4rem;
+    letter-spacing:var(--spacing);
+    margin-bottom:2.4rem;
+    
+}
+ .title{
+    font-size:2.8rem;
+    font-weight:400;
+    max-width:30rem;
+
+ }

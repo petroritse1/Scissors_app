@@ -1,0 +1,106 @@
+.nav{
+    &__center{
+
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        
+        max-width: 130rem;
+        margin:0 auto;
+        padding:.5rem 2rem;
+        gap:2rem;
+        align-items: center;
+
+    }
+    &__signin{
+        display:flex;
+        align-items:center;
+        width:30rem;
+        max-width:35rem;
+        gap:3rem;
+    }
+    & btn{
+        width:10rem;
+        max-width:15rem;
+        gap:3rem;
+    }
+    
+    // &__block{
+    //     position:fixed;
+    //     top:0;
+    //     right:0;
+    //     width:70vw;
+    //     z-index:5;
+    //     background:var(--clr-white);
+    //     height:100%;
+    //     animation:slideFromLeft cubic-bezier(0.075, 0.82, 0.165, 1) .9s;
+    //     @include device(big__tab){
+    //         display:block;
+    //         position:static;
+    //         background: transparent;
+    //         flex:0 0 40%;
+              
+
+    //     }
+        
+    // }
+    &__nav{
+        @include device(big_tab){
+            display:none;
+        }
+    }
+    &__list{
+        // transform:translateY(40%);
+        width:50rem;
+        max-width:50rem;
+        text-align: center;
+        @include device(big__tab){
+            display:flex;
+            align-items: center;
+            gap:3rem;
+            transform:translateY(0);
+             
+        }
+
+    }
+
+    &__icon{
+        color:var(--clr-primary);
+        transform:scale(1.5);
+    }
+    &__link{
+        font-size:2rem;
+        margin:1rem 0;
+        transition:.9s all;
+        padding:1rem 2rem;
+        color:var(--clr-bg);
+        
+        &:hover,&:active{
+            transform:translateX(.5rem);
+            
+            
+        }
+        @include device(big__tab){
+            font-size:1.6rem;
+            padding:0;
+        }
+    }
+    &__btn{
+        display:block;
+        @include device(big__tab){
+            display:none;
+        }
+    }
+    &__closebtn{
+        @include device(big__tab){
+            display:none;
+        }
+        position:absolute;
+        top:2rem;
+        right:4rem;
+    
+    }
+    &__close{
+        width:100%;
+    }
+}

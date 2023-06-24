@@ -1,0 +1,63 @@
+.reasons{
+    padding:9.6rem 0;
+    &__block{
+        @include device(big__tab){
+            display:flex;
+            gap:4rem;
+            justify-content: space-between;
+            align-items:flex-start;
+        }
+    }
+    &__text{
+        font-size:1.3rem;
+        width:100%;
+        padding:2rem;
+        margin-bottom:4rem;
+        @include device(big__tab){
+            max-width:35rem;
+            
+        }
+    }
+    &__steps{
+        display:flex;
+        flex-direction:column;
+        gap:4rem;
+        @include device(big__tab){
+            display:grid;
+            grid-template-columns:repeat(2,minmax(20rem,1fr));
+            row-gap:6rem;
+            column-gap:4rem;
+        }
+
+    }
+    &__iconblock{
+        
+        background:#3284FF21 13%;
+        width:4rem;
+        height:4rem;
+        border-radius:50%;
+        position:relative;
+        margin-bottom:2rem;
+    }
+    &__icons{
+        position:absolute;
+        top:30%;
+        left:30%;
+        width:1.8rem;
+        height:1.8rem;
+
+    }
+    &__subheading{
+        font-size:1.8rem;
+        font-weight:500;
+        margin-bottom:1rem;
+    }
+    &__step-text{
+        font-size:1.3rem;
+        max-width:60rem;
+        @include device(big__tab){
+            max-width:30rem;
+
+        }
+    }
+}
