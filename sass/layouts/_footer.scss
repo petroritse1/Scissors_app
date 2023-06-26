@@ -44,8 +44,10 @@
     &__links{
         color:var(--clr-primary-dark);
         transition:.6s all;
+        cursor:pointer;
         &:hover,&:active{
             color:var(--clr-primary);
+            
             
          }
     }

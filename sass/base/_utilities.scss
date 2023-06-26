@@ -23,9 +23,7 @@
 
 .hide{
     display:none;
-    @include device(big_tab){
-        display:block;
-    }
+     
 }
 
 .chain{

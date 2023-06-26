@@ -2,15 +2,16 @@
     &__center{
 
         display:flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items:center;
-        
         max-width: 130rem;
         margin:0 auto;
         padding:.5rem 2rem;
         gap:2rem;
-        align-items: center;
 
+    }
+    &__img{
+       margin-top:1rem;
     }
     &__signin{
         display:flex;
@@ -44,26 +45,43 @@
     //     }
         
     // }
-    &__nav{
-        @include device(big_tab){
-            display:none;
-        }
+    &__side{
+        position:fixed;
+        top:0;
+        right:0;
+        width:70vw;
+        z-index:5;
+        background:var(--clr-white);
+        height:100%;
+        text-align:center;
+
+        gap:3rem;
+        animation:slideFromLeft cubic-bezier(0.075, 0.82, 0.165, 1) .9s;
     }
-    &__list{
-        // transform:translateY(40%);
-        width:50rem;
-        max-width:50rem;
-        text-align: center;
+    &__sideblock{
+        margin-top:3rem;
+        display:flex;
+        flex-direction:column;
+        gap:6rem;
+    }
+ 
+    
+    &__list{ 
+        display:none;
         @include device(big__tab){
-            display:flex;
-            align-items: center;
-            gap:3rem;
-            transform:translateY(0);
-             
+            display:block;
         }
-
     }
-
+    &__items{
+        display:flex;
+        gap:2rem;
+    }
+    &__sign{
+        display:none;
+        @include device(big__tab){
+            display:block;
+        }
+    }
     &__icon{
         color:var(--clr-primary);
         transform:scale(1.5);
@@ -91,16 +109,16 @@
             display:none;
         }
     }
-    &__closebtn{
-        @include device(big__tab){
-            display:none;
-        }
-        position:absolute;
-        top:2rem;
-        right:4rem;
+    // &__closebtn{
+    //     @include device(big__tab){
+    //         display:none;
+    //     }
+    //     position:absolute;
+    //     top:2rem;
+    //     right:4rem;
     
-    }
-    &__close{
-        width:100%;
-    }
+    // }
+    // &__close{
+    //     width:100%;
+    // }
 }

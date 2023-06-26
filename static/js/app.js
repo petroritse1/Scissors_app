@@ -24,7 +24,12 @@ scrollLinks.forEach(link => {
 
 
 const navBtn = document.getElementById("nav__btn");
-const navBlock = document.getElementById("nav__block");
+const navBlock = document.getElementById("nav__side");
+const date = (document.querySelector(
+  ".year"
+).innerHTML = new Date().getFullYear());
+
+
 
 navBtn.addEventListener("click", () => {
     navBtn.classList.toggle("hide")
