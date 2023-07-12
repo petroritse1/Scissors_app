@@ -22,8 +22,28 @@
 }
 
 .hide{
+    transform:.7s all;
     display:none;
+
      
+}
+.show-text{
+    display:block !important;  
+}
+.show-text .faq__text{
+    display:block;
+   
+}
+
+.minus-icon{
+    display:none;
+}
+
+.show-text .minus-icon {
+display: inline;
+}
+.show-text .plus-icon {
+display: none;
 }
 
 .chain{

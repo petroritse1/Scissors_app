@@ -21,6 +21,38 @@ scrollLinks.forEach(link => {
   });
 });
 
+const questions = document.querySelectorAll(".faq__question");
+const plusIcon = document.querySelector(".plus-icon");
+const minusIcon = document.querySelector(".minus-icon");
+// const text = document.querySelectorAll(".faq__text")
+
+questions.forEach(function(question){
+  const btn = question.querySelector(".faq__btn")
+    // question.addEventListener("click", function (e){
+       
+    // plusIcon.addEventListener("click",function (e) {
+    //   e.currentTarget.classList.toggle("hide")
+    //   text.classList.toggle('hide');
+    
+    // })
+    // minusIcon.addEventListener("click",function (e) {
+    //   e.currentTarget.classList.toggle("hide")
+    //   text.classList.toggle('hide');
+    
+    // })
+    
+    // })
+    btn.addEventListener("click",()=>{
+      questions.forEach(function(item){
+         
+        if (item !== question){
+          item.classList.remove("show-text");
+        }
+       })
+  
+      question.classList.toggle("show-text");
+    })
+})
 
 
 const navBtn = document.getElementById("nav__btn");
